@@ -6,6 +6,9 @@
 			"include": "#functions"
 		},
 		{
+			"include": "#colors"
+		},
+		{
 			"include": "#comments"
 		}
 	],
@@ -14,13 +17,46 @@
 			"patterns": [
 				{
 					"name": "entry.functions.tig",
-					"match": "\\b(set|bind|color)\\s+((main|diff|log|tree|blob|blame|refs|status|stage|stash|pager|help)(-view|-options)?|ignore-case|line-graphics|generic|diff-header|date|cursor|Author|Commit)\\s?\\b",
+					"match": "\\b(set|bind)\\s+((?:main|diff|log|tree|blob|blame|refs|status|stage|stash|pager|help)(?:-view|-options)?|ignore-case|line-graphics|generic)\\s+(.)\\s(.*)$",
 					"captures": {
-						"0": {
+						"1": {
 							"name": "entity.name.function.tig"
 						},
-						"1": {
+						"2": {
 							"name": "entity.name.type.tig"
+						},
+						"3": {
+							"name": "entity.name.tag.tig"
+						},
+						"4": {
+							"name": "entity.name.command.tig",
+							"patterns": [
+								{
+									"name": "entity.name.function.shell.tig",
+									"match": "\\b(.*)\\b",
+									"captures": {
+										"0": {
+											"name": "entity.name.other.tig"
+										}
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		"colors": {
+			"patterns": [
+				{
+					"name": "entry.fuctions.color.tig",
+					"match": "\\b(color)\\s+(date|Author|cursor|Commit|diff-header)\\s+(.*)\\b",
+					"captures": {
+						"1": {
+							"name": "entity.name.function.color.tig"
+						},
+						"2": {
+							"name": "entity.name.type.color.tig"
 						}
 					}
 				}
