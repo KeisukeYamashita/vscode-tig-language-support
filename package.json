@@ -1,0 +1,26 @@
+{
+    "name": "keke-tig-syntax-highlight",
+    "displayName": "Tig Syntax Highlight",
+    "description": "Language Support for Tig",
+    "publisher": "KeisukeYamashita",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.32.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "tig",
+            "aliases": ["Tig"],
+            "extensions": [".tigrc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tig",
+            "scopeName": "source.tig",
+            "path": "./syntaxes/tig.tmLanguage.json"
+        }]
+    }
+}
