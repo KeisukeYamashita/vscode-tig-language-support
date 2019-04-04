@@ -9,7 +9,7 @@ VSCode Language Extention for Tig.
 ## Features
 ### 1. Syntaxs Highlighting
 
-Syntax highlighting for Tig file `.tigrc`.
+Syntax highlighting for Tig file `.tigrc` including comments.
 
 ![Syntax highlighting](./images/syntax-highlighting.png)
 
@@ -17,7 +17,9 @@ Syntax highlighting for Tig file `.tigrc`.
 
 We offer snippets for these functions.
 
+- `set`
 - `bind`
+- `color`
 
 ## Contributor
 
