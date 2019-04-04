@@ -17,7 +17,7 @@
 			"patterns": [
 				{
 					"name": "entry.functions.tig",
-					"match": "\\b(set|bind)\\s+((?:main|diff|log|tree|blob|blame|refs|status|stage|stash|pager|help)(?:-view|-options)?|ignore-case|line-graphics|generic)\\s+(.)\\s(.*)$",
+					"match": "\\b(set|bind)?\\s+((?:main|diff|log|tree|blob|blame|refs|status|stage|stash|pager|help)(?:-view|-options)?|ignore-case|line-graphics|generic)\\s+(.)\\s(.*)$",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.tig"
@@ -33,7 +33,7 @@
 							"patterns": [
 								{
 									"name": "entity.name.function.shell.tig",
-									"match": "\\b(.*)\\b",
+									"match": "(.*)",
 									"captures": {
 										"0": {
 											"name": "entity.name.other.tig"
@@ -57,6 +57,9 @@
 						},
 						"2": {
 							"name": "entity.name.type.color.tig"
+						},
+						"3": {
+							"name": "entity.other.color.tig" 
 						}
 					}
 				}

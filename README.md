@@ -13,7 +13,11 @@ Syntax highlighting for Tig file `.tigrc`.
 
 ![Syntax highlighting](./images/syntax-highlighting.png)
 
-### 2. (Planning) Tig Snippets
+### 2. Tig Snippets
+
+We offer snippets for these functions.
+
+- `bind`
 
 ## Contributor
 
