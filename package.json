@@ -1,11 +1,15 @@
 {
-    "name": "keke-tig-syntax-highlight",
-    "displayName": "Tig Syntax Highlight",
+    "name": "vscode-tig-language-support",
+    "displayName": "Tig Language Support",
     "description": "Language Support for Tig",
     "publisher": "KeisukeYamashita",
     "version": "0.1.0",
     "engines": {
         "vscode": "^1.32.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/KeisukeYamashita/vscode-tig-language-support.git"
     },
     "categories": [
         "Programming Languages"

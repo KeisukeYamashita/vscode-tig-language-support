@@ -1,19 +1,17 @@
-# vscode-tig-syntax-highlighting README
+# Vscode Tig Language Support
 
-This is the README for your extension "keke-tig-syntax-highlighting".
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Extention Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KeisukeYamashita.vscode-tig-language-support)
+
+VSCode Language Extention for Tig.
 
 ## Features
+### Syntaxs Highlighting
 
 Syntax highlighting for Tig file `.tigrc`.
 
 ![Syntax highlighting](./images/syntax-highlighting.png)
 
-## Release Notes
+## Contributor
 
-Users appreciate release notes as you update your extension.
-
-### 0.1.0
-
-Initial beta release of Tig Syntax Highlight.
-
-**Enjoy your tig life!**
+- [KeisukeYamashita](https://github.com/KeisukeYamashita)
