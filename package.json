@@ -4,7 +4,8 @@
     "description": "Language Support for Tig",
     "publisher": "KeisukeYamashita",
     "license": "SEE LICENSE IN LICENSE",
-    "version": "0.1.2",
+    "icon": "images/icon.png",
+    "version": "0.1.3",
     "engines": {
         "vscode": "^1.32.0"
     },
