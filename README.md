@@ -4,7 +4,6 @@
 [![Extention Version](https://img.shields.io/badge/version-0.1.1-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KeisukeYamashita.vscode-tig-language-support)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-
 VSCode Language Extention for Tig.
 
 ## Features

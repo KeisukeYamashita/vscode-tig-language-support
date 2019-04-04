@@ -3,6 +3,7 @@
     "displayName": "Tig Language Support",
     "description": "Language Support for Tig",
     "publisher": "KeisukeYamashita",
+    "license": "SEE LICENSE IN LICENSE",
     "version": "0.1.0",
     "engines": {
         "vscode": "^1.32.0"
