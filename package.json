@@ -4,7 +4,7 @@
     "description": "Language Support for Tig",
     "publisher": "KeisukeYamashita",
     "license": "SEE LICENSE IN LICENSE",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "engines": {
         "vscode": "^1.32.0"
     },
@@ -16,16 +16,24 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "tig",
-            "aliases": ["Tig"],
-            "extensions": [".tigrc"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "tig",
-            "scopeName": "source.tig",
-            "path": "./syntaxes/tig.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "tig",
+                "aliases": [
+                    "Tig"
+                ],
+                "extensions": [
+                    ".tigrc"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "tig",
+                "scopeName": "source.tig",
+                "path": "./syntaxes/tig.tmLanguage.json"
+            }
+        ]
     }
 }
