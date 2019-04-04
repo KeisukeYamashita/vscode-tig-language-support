@@ -1,4 +1,4 @@
-# vscode-tig-syntax-highlighting README
+# vscode-tig-language-support
 
 This is the README for your extension "keke-tig-syntax-highlighting".
 
