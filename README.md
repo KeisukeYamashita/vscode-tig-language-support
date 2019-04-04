@@ -1,7 +1,7 @@
 # Vscode Tig Language Support
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![Extention Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KeisukeYamashita.vscode-tig-language-support)
+[![Extention Version](https://img.shields.io/badge/version-0.1.1-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KeisukeYamashita.vscode-tig-language-support)
 
 VSCode Language Extention for Tig.
 
