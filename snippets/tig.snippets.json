@@ -1,0 +1,18 @@
+{
+    "set": {
+        "scope": "tig",
+        "prefix": "set",
+        "body": "set $1 = $3",
+        "description": "Set defines value of specific key"
+    },
+    "bind": {
+        "prefix": "bind",
+        "body": "bind ${1|main,diff,log,tree,blob,blame,refs,status,stage,stash,pager,help|} $2 $3",
+        "description": "Bind defines behavior of user input in specific mode"
+    },
+    "color": {
+        "prefix": "bind",
+        "body": "color ${1|date|Author|cursor|Commit|diff-header|} $2 $3",
+        "description": "Bind defines color configurations"
+    }
+}
