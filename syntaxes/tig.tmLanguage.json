@@ -32,11 +32,11 @@
 							"name": "entity.name.tag.tig"
 						},
 						"4": {
-							"name": "entity.name.command.tig",
+							"name": "entity.name.action.tig",
 							"patterns": [
 								{
-									"name": "entity.name.function.shell.tig",
-									"match": "(.*)",
+									"name": "entity.name.function.command.tig",
+									"match": "(.*)$",
 									"captures": {
 										"0": {
 											"name": "entity.name.other.tig"
