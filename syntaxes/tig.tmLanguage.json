@@ -9,6 +9,9 @@
 			"include": "#colors"
 		},
 		{
+			"include": "#sources"
+		},
+		{
 			"include": "#comments"
 		}
 	],
@@ -60,6 +63,19 @@
 						},
 						"3": {
 							"name": "entity.other.color.tig" 
+						}
+					}
+				}
+			]
+		},
+		"sources": {
+			"patterns": [
+				{
+					"name": "entry.functions.source.tig",
+					"match": "\\b(source)\\s.*\\b",
+					"captures": {
+						"1": {
+							"name": "entity.name.function.source.tig"
 						}
 					}
 				}

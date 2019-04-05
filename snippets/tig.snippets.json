@@ -6,13 +6,21 @@
         "description": "Set defines value of specific key"
     },
     "bind": {
+        "scope": "tig",
         "prefix": "bind",
         "body": "bind ${1|main,diff,log,tree,blob,blame,refs,status,stage,stash,pager,help|} $2 $3",
         "description": "Bind defines behavior of user input in specific mode"
     },
     "color": {
+        "scope": "tig",
         "prefix": "bind",
-        "body": "color ${1|date|Author|cursor|Commit|diff-header|} $2 $3",
+        "body": "color ${1|default,cursor,status,title-focus,title-blur,search-result,delimiter,header,line-number,id,date,author,mode,overflow,directory,file,file-size|} $2 $3",
         "description": "Bind defines color configurations"
+    },
+    "source": {
+        "scope": "tig",
+        "prefix": "source",
+        "body": "source $1",
+        "description": "Specify path to your files"
     }
 }
