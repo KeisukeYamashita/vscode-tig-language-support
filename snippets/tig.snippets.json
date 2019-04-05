@@ -13,7 +13,7 @@
     },
     "color": {
         "scope": "tig",
-        "prefix": "bind",
+        "prefix": "color",
         "body": "color ${1|default,cursor,status,title-focus,title-blur,search-result,delimiter,header,line-number,id,date,author,mode,overflow,directory,file,file-size|} $2 $3",
         "description": "Bind defines color configurations"
     },
