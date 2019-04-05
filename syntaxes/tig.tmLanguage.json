@@ -19,27 +19,76 @@
 		"functions": {
 			"patterns": [
 				{
-					"name": "entry.functions.tig",
-					"match": "\\b(set|bind)?\\s+((?:main|diff|log|tree|blob|blame|refs|status|stage|stash|pager|help)(?:-view|-options)?|ignore-case|line-graphics|generic)\\s+(.)\\s(.*)$",
+					"name": "entry.functions.set.tig",
+					"match": "\\b(set)(.*)\\b",
 					"captures": {
 						"1": {
-							"name": "entity.name.function.tig"
+							"name": "entity.name.function.set.tig"
 						},
 						"2": {
-							"name": "entity.name.type.tig"
-						},
-						"3": {
-							"name": "entity.name.tag.tig"
-						},
-						"4": {
-							"name": "entity.name.action.tig",
 							"patterns": [
 								{
-									"name": "entity.name.function.command.tig",
-									"match": "(.*)$",
+									"name": "entry.functions.set.assert.tig",
+									"match": "\\s+(diff-options|blame-options|log-options|main-options|reference-format|line-graphics|truncation-delimiter|horizontal-scroll|git-colors|show-notes|show-changes|vertical-split|split-view-height|split-view-width|status-show-untracked-dirs|status-show-untracked-files|tab-size|diff-context|diff-highlight|ignore-space|commit-order|ignore-case|mailmap|wrap-lines|focus-child|editor-line-number|history-size|mouse|mouse-scroll|mouse-wheel-cursor|refresh-mode|refresh-interval|file-args|rev-args|blob-view|diff-view|log-view|pager-view|stage-view|blame-view|grep-view|main-view|refs-view|stash-view|status-view|tree-view|author|commit-title|date|file-name|file-size|id|line-number|mode|ref|status|text)(.*)",
 									"captures": {
-										"0": {
-											"name": "entity.name.other.tig"
+										"1": {
+											"name": "variable.function.set.key.tig"
+										},
+										"2": {
+											"patterns": [{
+												"name": "entry.functions.set.value.tig",
+												"match": "\\s+=\\s(.*)$",
+												"captures": {
+													"1": {
+														"name": "constant.character.set.value.tig"
+													}
+												}
+											}]
+										}
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"name": "entry.functions.bind.tig",
+					"match": "\\b(bind)(.*)\\b",
+					"captures": {
+						"1": {
+							"name": "entity.name.function.bind.tig"
+						},
+						"2": {
+							"patterns": [
+								{
+									"name": "entry.functions.bind.assert.tig",
+									"match": "\\s+(generic|main|diff|log|tree|blob|blame|refs|status|stage|stash|pager|help)(.*)$",
+									"captures": {
+										"1": {
+											"name": "entity.name.type.bind.tig"
+										},
+										"2": {
+											"patterns": [{
+												"name": "entry.functions.bind.action.tig",
+												"match": "\\s+(.)(.*)$",
+												"captures": {
+													"1": {
+														"name": "constant.character.bind.trigger.tig"
+													},
+													"2": {
+														"patterns": [{
+															"name": "constant.other.bind.action.tig",
+															"match": "\\s(.*)$",
+															"captures": {
+																"1": {
+																	"name": "constant.other.bind.action.tig"
+																}
+															}
+
+														}]
+													}
+												}
+											}]
 										}
 									}
 								}
@@ -65,7 +114,7 @@
 									"match": "\\s+(default|cursor|status|title-focus|title-blur|search-result|delimiter|header|line-number|id|date|author|mode|overflow|directory|file|file-size)(.*)",
 									"captures": {
 										"1": {
-											"name": "entity.name.function.color.tig"
+											"name": "entity.name.type.color.tig"
 										},
 										"2": {
 											"patterns": [

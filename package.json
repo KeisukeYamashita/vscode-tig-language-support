@@ -1,11 +1,11 @@
 {
     "name": "vscode-tig-language-support",
     "displayName": "Tig Language Support",
-    "description": "Language Support for Tig",
+    "description": "Language Support for Tig configure file .tigrc",
     "publisher": "KeisukeYamashita",
     "license": "SEE LICENSE IN LICENSE",
     "icon": "images/icon.png",
-    "version": "0.2.3",
+    "version": "0.2.4",
     "engines": {
         "vscode": "^1.32.0"
     },

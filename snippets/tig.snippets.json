@@ -14,7 +14,7 @@
     "bind": {
         "scope": "tig",
         "prefix": "bind",
-        "body": "bind ${1|main,diff,log,tree,blob,blame,refs,status,stage,stash,pager,help|} $2 $3",
+        "body": "bind ${1|generic,main,diff,log,tree,blob,blame,refs,status,stage,stash,pager,help|} $2 $3",
         "description": "Bind defines behavior of user input in specific mode"
     },
     "color": {
