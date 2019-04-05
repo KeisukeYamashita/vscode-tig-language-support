@@ -32,11 +32,11 @@
 							"name": "entity.name.tag.tig"
 						},
 						"4": {
-							"name": "entity.name.command.tig",
+							"name": "entity.name.action.tig",
 							"patterns": [
 								{
-									"name": "entity.name.function.shell.tig",
-									"match": "(.*)",
+									"name": "entity.name.function.command.tig",
+									"match": "(.*)$",
 									"captures": {
 										"0": {
 											"name": "entity.name.other.tig"
@@ -95,10 +95,23 @@
 			"patterns": [
 				{
 					"name": "entry.functions.source.tig",
-					"match": "\\b(source)\\s.*\\b",
+					"match": "\\b(source)(.*)\\b",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.source.tig"
+						},
+						"2": {
+							"patterns": [
+								{
+									"name": "entry.source.path.tig",
+									"match": "\\s+(.*.tigrc)",
+									"captures": {
+										"1": {
+											"name": "constant.character.source.path.tig"
+										}
+									}
+								}
+							]
 						}
 					}
 				}
