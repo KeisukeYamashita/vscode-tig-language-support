@@ -1,6 +1,6 @@
 <!-- Thanks for your Issue!
 
-Ask KeiuskeYamashita<19yamashita15@gmail.com> for questions
+Ask KeisukeYamashita<19yamashita15@gmail.com> for questions
 
  -->
  

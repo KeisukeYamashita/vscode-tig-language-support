@@ -1,6 +1,6 @@
 <!-- Thanks for your Pull Request(PR)!
 
-Ask KeiuskeYamashita<19yamashita15@gmail.com> for questions
+Ask KeisukeYamashita<19yamashita15@gmail.com> for questions
 
  -->
 
