@@ -53,7 +53,7 @@
 			"patterns": [
 				{
 					"name": "entry.fuctions.color.tig",
-					"match": "\\b(color)\\s+(date|Author|cursor|Commit|diff-header)\\s+(.*)\\b",
+					"match": "\\b(color)\\s+(date|Author|cursor|Commit|diff-header)\\s+(.*)\\s+(.*)\\b",
 					"captures": {
 						"1": {
 							"name": "entity.name.function.color.tig"
@@ -63,6 +63,9 @@
 						},
 						"3": {
 							"name": "entity.other.color.tig" 
+						},
+						"4": {
+							"name": "constant.character.color.tig"
 						}
 					}
 				}
