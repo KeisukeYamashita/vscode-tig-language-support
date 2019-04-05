@@ -1,8 +1,11 @@
 # Change Log
 
-All notable changes to the "keke-tig-syntax-highlighting" extension will be documented in this file.
+All notable changes to the "vscode-tig-language-support" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [0.3.0]
+
+- Added complete snippets
+- Added syntaxes highlight for all functions
 
 ## [0.2.0]
 
