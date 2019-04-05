@@ -1,7 +1,7 @@
 # VSCode Tig Language Support
 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![Extention Version](https://img.shields.io/badge/version-0.3.0-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KeisukeYamashita.vscode-tig-language-support)
+[![Extention Version](https://img.shields.io/badge/version-0.3.1-blue.svg)](https://marketplace.visualstudio.com/items?itemName=KeisukeYamashita.vscode-tig-language-support)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 VSCode Language Extention for Tig configuration file `~.tigrc`.
