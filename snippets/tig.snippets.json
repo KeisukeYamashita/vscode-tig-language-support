@@ -1,14 +1,20 @@
 {
-    "setVariable": {
+    "set variables": {
         "scope": "tig",
         "prefix": "set",
-        "body": "set ${1|diff-options,blame-options,log-options,main-options,reference-format,line-graphics,truncation-delimiter,horizontal-scroll,git-colors,show-notes,show-changes,vertical-split,split-view-height,split-view-width,status-show-untracked-dirs,status-show-untracked-files,tab-size,diff-context,diff-highlight,ignore-space,commit-order,ignore-case,mailmap,wrap-lines,focus-child,editor-line-number,history-size,mouse,mouse-scroll,mouse-wheel-cursor,refresh-mode,refresh-interval,file-args,rev-args|} = $3",
+        "body": "set ${1|diff-options,blame-options,log-options,main-options,reference-format,line-graphics,truncation-delimiter,horizontal-scroll,git-colors,show-notes,show-changes,vertical-split,split-view-height,split-view-width,status-show-untracked-dirs,status-show-untracked-files,tab-size,diff-context,diff-highlight,ignore-space,commit-order,ignore-case,mailmap,wrap-lines,focus-child,editor-line-number,history-size,mouse,mouse-scroll,mouse-wheel-cursor,refresh-mode,refresh-interval,file-args,rev-args|blob-view,diff-view,log-view,pager-view,stage-view,blame-view,grep-view,main-view,refs-view,stash-view,status-view,tree-view,author,commit-title,date,file-name,file-size,id,line-number,mode,ref,status,text|} = $2",
+        "description": "Set defines view setting of specific key"
+    },
+    "set variables for general settings": {
+        "scope": "tig",
+        "prefix": "set",
+        "body": "set ${1|diff-options,blame-options,log-options,main-options,reference-format,line-graphics,truncation-delimiter,horizontal-scroll,git-colors,show-notes,show-changes,vertical-split,split-view-height,split-view-width,status-show-untracked-dirs,status-show-untracked-files,tab-size,diff-context,diff-highlight,ignore-space,commit-order,ignore-case,mailmap,wrap-lines,focus-child,editor-line-number,history-size,mouse,mouse-scroll,mouse-wheel-cursor,refresh-mode,refresh-interval,file-args,rev-args|} = $2",
         "description": "Sets variable for tig"
     },
-    "setView": {
+    "set variables for view settings": {
         "scope": "tig",
         "prefix": "set",
-        "body": "set ${1|blob-view,diff-view,log-view,pager-view,stage-view,blame-view,grep-view,main-view,refs-view,stash-view,status-view,tree-view,author,commit-title,date,file-name,file-size,id,line-number,mode,ref,status,text|} = $3",
+        "body": "set ${1|blob-view,diff-view,log-view,pager-view,stage-view,blame-view,grep-view,main-view,refs-view,stash-view,status-view,tree-view,author,commit-title,date,file-name,file-size,id,line-number,mode,ref,status,text|} = $2",
         "description": "Set defines view setting of specific key"
     },
     "bind": {
