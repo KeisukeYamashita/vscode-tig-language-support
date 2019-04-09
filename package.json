@@ -5,7 +5,7 @@
     "publisher": "KeisukeYamashita",
     "license": "SEE LICENSE IN LICENSE",
     "icon": "images/icon.png",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "engines": {
         "vscode": "^1.32.0"
     },
@@ -23,9 +23,9 @@
         "Other"
     ],
     "activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
-	"main": "./out/extension.js",
+        "onCommand:extension.helloWorld"
+    ],
+    "main": "./out/extension.js",
     "contributes": {
         "languages": [
             {
@@ -39,10 +39,12 @@
                 "configuration": "./language-configuration.json"
             }
         ],
-        "commands": [{
-			"command": "extension.helloWorld",
-			"title": "Hello World"
-		}],
+        "commands": [
+            {
+                "command": "extension.helloWorld",
+                "title": "Hello World"
+            }
+        ],
         "grammars": [
             {
                 "language": "tig",
@@ -58,17 +60,17 @@
         ]
     },
     "scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
-	}
+        "vscode:prepublish": "yarn run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^3.3.1",
+        "vscode": "^1.1.28",
+        "tslint": "^5.12.1",
+        "@types/node": "^10.12.21",
+        "@types/mocha": "^2.2.42"
+    }
 }
