@@ -19,8 +19,13 @@
     ],
     "categories": [
         "Programming Languages",
-        "Snippets"
+        "Snippets",
+        "Other"
     ],
+    "activationEvents": [
+		"onCommand:extension.helloWorld"
+	],
+	"main": "./out/extension.js",
     "contributes": {
         "languages": [
             {
@@ -34,6 +39,10 @@
                 "configuration": "./language-configuration.json"
             }
         ],
+        "commands": [{
+			"command": "extension.helloWorld",
+			"title": "Hello World"
+		}],
         "grammars": [
             {
                 "language": "tig",
@@ -47,5 +56,19 @@
                 "path": "./snippets/tig.snippets.json"
             }
         ]
-    }
+    },
+    "scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
 }
