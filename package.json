@@ -5,7 +5,7 @@
     "publisher": "KeisukeYamashita",
     "license": "SEE LICENSE IN LICENSE",
     "icon": "images/icon.png",
-    "version": "0.3.5",
+    "version": "0.3.6",
     "engines": {
         "vscode": "^1.32.0"
     },
